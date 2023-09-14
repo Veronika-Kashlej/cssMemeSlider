@@ -1,9 +1,10 @@
  .slider{
     overflow: hidden;
-    max-width: 58%;
+    max-width: 88%;
     height: auto;
     display: flex;
     flex-direction: column;
+    margin-top: 3%;
 }
 .text-slider{
     overflow: hidden;
@@ -16,23 +17,23 @@
     width: 400%;
     height: 100%;
     display: flex; 
+    flex-wrap: nowrap;
 }
 .down{
      display: flex;
      flex-direction: row;
-     width: 58%;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 20px;
+     width: 88%;
+     align-items: center;
+     justify-content: space-between;
+     margin-bottom: 3%;
+     margin-top: 3%;
 }
 .slider-items{
     width: 400%;
     height: 100%;
     display: flex;
 }
-.text-p {
-  width: 245px; 
-}
+
 .slider-items .item{
     width: 25%;
     transition: .7s;
@@ -49,8 +50,8 @@ display: flex;
 justify-content: center;
 }
 .slider-nav .bar{
-    width: 2vw;
-    height: 3vh;
+    width: 1.5rem;
+    height: 1.5rem;
     border-radius: 50%;
     background-color: blue;
     border: 3px solid #242322;
@@ -76,15 +77,12 @@ margin-left: -50%;
 margin-left: -75%;
 }  
 
-#r1:checked ~ .p1{
-    margin-left: 0;
-    }
-    #r2:checked ~ .p1{
-        margin-left: -25%;
-    }
-    #r3:checked ~ .p1{
-    margin-left: -50%;
-    }
-    #r4:checked ~ .p1{
-    margin-left: -75%;
-    }  
+
+@media(max-width: 768px){
+.down{
+    flex-direction: column-reverse;
+}
+.text-slider{
+    margin-top: 3.5%;
+}
+}
