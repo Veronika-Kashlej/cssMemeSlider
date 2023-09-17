@@ -90,28 +90,7 @@
  #r4:checked~.r1 {
      margin-left: -75%;
  }
- .bar:checked{
-    background-color: #242322;
- }
- .slider-nav:has(#r1:checked) + .text-slider .text-p{
-    transform: translateX(-100%);
- }
-
- #r1:checked~.bar {
-     background-color: #242322;
- }
-
- #r2:checked~.bar {
-     background-color: #242322;
- }
-
- #r3:checked~.bar {
-     background-color: #242322;
- }
-
- #r4:checked~.bar {
-     background-color: #242322;
- }
+ 
 
  @media(max-width: 768px) {
      .down {
